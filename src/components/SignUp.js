@@ -21,7 +21,7 @@ class SignUp extends Component {
 
   componentDidUpdate(prevProps, prevState) {
     if (prevState.username !== this.state.username) {
-      fetchWithCredentials(`https://nibbl.live/api/v1/users/exists?username=${this.state.username}`)
+      fetchWithCredentials(`https://powerful-springs-89951.herokuapp.com/api/v1/users/exists?username=${this.state.username}`)
       .then(json => {
         this.setState({
           usernameTaken: json.username_taken
@@ -47,7 +47,7 @@ class SignUp extends Component {
       bio: this.state.bio
     }
 
-    fetchWithCredentials('https://nibbl.live/api/v1/users', 'POST', {user})
+    fetchWithCredentials('https://powerful-springs-89951.herokuapp.com/api/v1/users', 'POST', {user})
     .then(json => {
       if (json.logged_in) {
         this.props.loginUser(json.user)

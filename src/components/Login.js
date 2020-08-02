@@ -18,7 +18,7 @@ class Login extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    fetchWithCredentials('https://nibbl.live/api/v1/login', 'POST', {
+    fetchWithCredentials('https://powerful-springs-89951.herokuapp.com/api/v1/login', 'POST', {
       email: this.state.email,
       password: this.state.password
     })

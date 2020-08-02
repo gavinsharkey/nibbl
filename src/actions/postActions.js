@@ -3,7 +3,7 @@ import { fetchWithCredentials } from '../concerns/fetchable'
 const fetchPost = postId => {
   return dispatch => {
     dispatch({type: 'LOADING_POST'})
-    fetchWithCredentials(`https://nibbl.live/api/v1/posts/${postId}`)
+    fetchWithCredentials(`https://powerful-springs-89951.herokuapp.com/api/v1/posts/${postId}`)
     .then(json => {
       if (json.status === 404) {
         dispatch({type: 'POST_NOT_FOUND'})
@@ -17,7 +17,7 @@ const fetchPost = postId => {
 const likePost = postId => {
   return dispatch => {
     dispatch({type: 'LOADING_SINGLE_LIKE'})
-    fetchWithCredentials('https://nibbl.live/api/v1/likes', 'POST', { post_id: postId })
+    fetchWithCredentials('https://powerful-springs-89951.herokuapp.com/api/v1/likes', 'POST', { post_id: postId })
     .then(json => {
       if (!json.errors) {
         dispatch({type: 'LIKE_SINGLE_POST', id: json.post_id, like: json})
@@ -29,7 +29,7 @@ const likePost = postId => {
 const unlikePost = likeId => {
   return dispatch => {
     dispatch({type: 'LOADING_SINGLE_LIKE'})
-    fetchWithCredentials(`https://nibbl.live/api/v1/likes/${likeId}`, 'DELETE')
+    fetchWithCredentials(`https://powerful-springs-89951.herokuapp.com/api/v1/likes/${likeId}`, 'DELETE')
     .then(json => {
       dispatch({type: 'UNLIKE_SINGLE_POST', like: json})
     })
