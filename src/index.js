@@ -13,7 +13,7 @@ const store = createStore(rootReducer, compose(applyMiddleware(thunk), window.__
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <BrowserRouter bansename="/nibbl">
       <App />
     </BrowserRouter>
   </Provider>,

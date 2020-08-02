@@ -18,7 +18,7 @@ class Login extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    fetchWithCredentials('http://localhost:3001/api/v1/login', 'POST', {
+    fetchWithCredentials('http://nibbl.live/api/v1/login', 'POST', {
       email: this.state.email,
       password: this.state.password
     })

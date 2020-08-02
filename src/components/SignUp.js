@@ -21,7 +21,7 @@ class SignUp extends Component {
 
   componentDidUpdate(prevProps, prevState) {
     if (prevState.username !== this.state.username) {
-      fetchWithCredentials(`http://localhost:3001/api/v1/users/exists?username=${this.state.username}`)
+      fetchWithCredentials(`http://nibbl.live/api/v1/users/exists?username=${this.state.username}`)
       .then(json => {
         this.setState({
           usernameTaken: json.username_taken
@@ -47,7 +47,7 @@ class SignUp extends Component {
       bio: this.state.bio
     }
 
-    fetchWithCredentials('http://localhost:3001/api/v1/users', 'POST', {user})
+    fetchWithCredentials('http://nibbl.live/api/v1/users', 'POST', {user})
     .then(json => {
       if (json.logged_in) {
         this.props.loginUser(json.user)
@@ -60,7 +60,7 @@ class SignUp extends Component {
     })
     // const formData = new FormData(this.form.current)
 
-    // fetch('http://localhost:3001/api/v1/users', {
+    // fetch('https://localhost:3001/api/v1/users', {
     //   method: 'POST',
     //   credentials: 'include',
     //   body: formData
@@ -78,8 +78,8 @@ class SignUp extends Component {
               <div className="form-group col-6">
                 <label htmlFor="username">Username: </label>
                 <div className="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">@</span>
+                  <div className="input-group-prepend">
+                    <span className="input-group-text">@</span>
                   </div>
                   <input onChange={this.handleChange} type="text" name="username" value={username} placeholder="Enter Username" className={`form-control p-2 ${usernameTaken ? 'is-invalid' : null}`} required/>
                 </div>
@@ -114,10 +114,6 @@ class SignUp extends Component {
             <div className="form-group">
               <label>Bio: </label>
               <textarea onChange={this.handleChange} name="bio" value={bio} className="form-control p-2" />
-            </div>
-            <div className="form-group">
-              <label>Bio: </label>
-              <input type="file" name="avatar" className="form-control-file p-2" />
             </div>
           </div>
         </form>

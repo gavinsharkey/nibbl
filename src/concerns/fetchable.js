@@ -1,6 +1,6 @@
 async function fetchWithCredentials(url, method = 'GET', body = {}) {
   const options = {
-      credentials: 'include',
+      credentials: 'include'
   }
 
   if (method !== 'GET') {

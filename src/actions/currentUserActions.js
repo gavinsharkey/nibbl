@@ -3,7 +3,7 @@ import { fetchWithCredentials } from '../concerns/fetchable'
 const checkLoggedInStatus = () => {
   return dispatch => {
     dispatch({type: 'LOADING_CURRENT_USER'})
-    fetchWithCredentials('http://localhost:3001/api/v1/logged_in')
+    fetchWithCredentials('http://nibbl.live/api/v1/logged_in')
     .then(json => {
       if (json.logged_in) {
         dispatch({type: 'LOGIN_USER', user: json.user})
