@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/nibbl/static/css/main.7688a2cf.chunk.css",
-    "main.js": "/nibbl/static/js/main.347efd58.chunk.js",
-    "main.js.map": "/nibbl/static/js/main.347efd58.chunk.js.map",
+    "main.js": "/nibbl/static/js/main.1c31a82d.chunk.js",
+    "main.js.map": "/nibbl/static/js/main.1c31a82d.chunk.js.map",
     "runtime-main.js": "/nibbl/static/js/runtime-main.09239f9f.js",
     "runtime-main.js.map": "/nibbl/static/js/runtime-main.09239f9f.js.map",
     "static/css/2.af3c1da9.chunk.css": "/nibbl/static/css/2.af3c1da9.chunk.css",
     "static/js/2.dee1dab4.chunk.js": "/nibbl/static/js/2.dee1dab4.chunk.js",
     "static/js/2.dee1dab4.chunk.js.map": "/nibbl/static/js/2.dee1dab4.chunk.js.map",
     "index.html": "/nibbl/index.html",
-    "precache-manifest.ff791e844b56b60980355cdba2902505.js": "/nibbl/precache-manifest.ff791e844b56b60980355cdba2902505.js",
+    "precache-manifest.e167c79d791ca83e540b247c66ac8644.js": "/nibbl/precache-manifest.e167c79d791ca83e540b247c66ac8644.js",
     "service-worker.js": "/nibbl/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/nibbl/static/css/2.af3c1da9.chunk.css.map",
     "static/css/main.7688a2cf.chunk.css.map": "/nibbl/static/css/main.7688a2cf.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.dee1dab4.chunk.js",
     "static/css/main.7688a2cf.chunk.css",
-    "static/js/main.347efd58.chunk.js"
+    "static/js/main.1c31a82d.chunk.js"
   ]
 }
