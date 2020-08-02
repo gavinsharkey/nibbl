@@ -3,7 +3,7 @@ import { fetchWithCredentials } from '../concerns/fetchable'
 const fetchComments = postId => {
   return dispatch => {
     dispatch({type: 'LOADING_COMMENTS'})
-    fetchWithCredentials(`http://nibbl.live/api/v1/comments?post_id=${postId}`)
+    fetchWithCredentials(`https://nibbl.live/api/v1/comments?post_id=${postId}`)
     .then(json => {
       dispatch({type: 'SET_COMMENTS', comments: json})
     })
@@ -12,7 +12,7 @@ const fetchComments = postId => {
 
 const createComment = (postId, body) => {
   return dispatch => {
-    fetchWithCredentials('http://nibbl.live/api/v1/comments', 'POST', {
+    fetchWithCredentials('https://nibbl.live/api/v1/comments', 'POST', {
       comment: {
         post_id: postId,
         body
@@ -28,7 +28,7 @@ const createComment = (postId, body) => {
 
 const destroyComment = commentId => {
   return dispatch => {
-    fetchWithCredentials(`http://nibbl.live/api/v1/comments/${commentId}`, 'DELETE')
+    fetchWithCredentials(`https://nibbl.live/api/v1/comments/${commentId}`, 'DELETE')
     .then(json => {
       dispatch({type: 'DELETE_COMMENT', id: json.id})
     })
