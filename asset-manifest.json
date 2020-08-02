@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/nibbl/static/css/main.7688a2cf.chunk.css",
+    "main.js": "/nibbl/static/js/main.66fc2556.chunk.js",
+    "main.js.map": "/nibbl/static/js/main.66fc2556.chunk.js.map",
+    "runtime-main.js": "/nibbl/static/js/runtime-main.09239f9f.js",
+    "runtime-main.js.map": "/nibbl/static/js/runtime-main.09239f9f.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/nibbl/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.dee1dab4.chunk.js": "/nibbl/static/js/2.dee1dab4.chunk.js",
+    "static/js/2.dee1dab4.chunk.js.map": "/nibbl/static/js/2.dee1dab4.chunk.js.map",
+    "index.html": "/nibbl/index.html",
+    "precache-manifest.3386327ff05937755f876ec3c762068d.js": "/nibbl/precache-manifest.3386327ff05937755f876ec3c762068d.js",
+    "service-worker.js": "/nibbl/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/nibbl/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.7688a2cf.chunk.css.map": "/nibbl/static/css/main.7688a2cf.chunk.css.map",
+    "static/js/2.dee1dab4.chunk.js.LICENSE.txt": "/nibbl/static/js/2.dee1dab4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09239f9f.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.dee1dab4.chunk.js",
+    "static/css/main.7688a2cf.chunk.css",
+    "static/js/main.66fc2556.chunk.js"
+  ]
+}
