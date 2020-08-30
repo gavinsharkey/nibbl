@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { fetchWithCredentials } from '../concerns/fetchable'
+import { fetchWithToken } from '../concerns/fetchable'
 import { loginUser } from '../actions/currentUserActions'
 import { connect } from 'react-redux'
 
@@ -21,7 +21,7 @@ class SignUp extends Component {
 
   componentDidUpdate(prevProps, prevState) {
     if (prevState.username !== this.state.username) {
-      fetchWithCredentials(`https://powerful-springs-89951.herokuapp.com/api/v1/users/exists?username=${this.state.username}`)
+      fetchWithToken(`https://powerful-springs-89951.herokuapp.com/api/v1/users/exists?username=${this.state.username}`)
       .then(json => {
         this.setState({
           usernameTaken: json.username_taken
@@ -47,10 +47,10 @@ class SignUp extends Component {
       bio: this.state.bio
     }
 
-    fetchWithCredentials('https://powerful-springs-89951.herokuapp.com/api/v1/users', 'POST', {user})
+    fetchWithToken('https://powerful-springs-89951.herokuapp.com/api/v1/users', 'POST', {user})
     .then(json => {
       if (json.logged_in) {
-        this.props.loginUser(json.user)
+        this.props.loginUser(json)
         this.props.history.push('/')
       } else {
         this.setState(prevState => {
@@ -60,7 +60,7 @@ class SignUp extends Component {
     })
     // const formData = new FormData(this.form.current)
 
-    // fetch('httpss://localhost:3001/api/v1/users', {
+    // fetch('https://powerful-springs-89951.herokuapp.com/api/v1/users', {
     //   method: 'POST',
     //   credentials: 'include',
     //   body: formData
@@ -78,8 +78,8 @@ class SignUp extends Component {
               <div className="form-group col-6">
                 <label htmlFor="username">Username: </label>
                 <div className="input-group">
-                  <div className="input-group-prepend">
-                    <span className="input-group-text">@</span>
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">@</span>
                   </div>
                   <input onChange={this.handleChange} type="text" name="username" value={username} placeholder="Enter Username" className={`form-control p-2 ${usernameTaken ? 'is-invalid' : null}`} required/>
                 </div>
@@ -115,6 +115,10 @@ class SignUp extends Component {
               <label>Bio: </label>
               <textarea onChange={this.handleChange} name="bio" value={bio} className="form-control p-2" />
             </div>
+            {/* <div className="form-group">
+              <label>Bio: </label>
+              <input type="file" name="avatar" className="form-control-file p-2" />
+            </div> */}
           </div>
         </form>
       </div>
