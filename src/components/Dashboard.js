@@ -10,12 +10,7 @@ import UserContainer from './UserContainer'
 
 class Dashboard extends Component {
   handleLogout = () => {
-    fetchWithToken('https://powerful-springs-89951.herokuapp.com/api/v1/logout', 'DELETE')
-    .then(json => {
-      if (json.logged_out) {
-        this.props.logoutUser()
-      }
-    })
+    this.props.logoutUser()
   }
 
   render() {
