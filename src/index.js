@@ -13,7 +13,7 @@ const store = createStore(rootReducer, applyMiddleware(thunk))
 
 ReactDOM.render(
   <Provider store={store}>
-    <HashRouter basename="/nibbl">
+    <HashRouter>
       <App />
     </HashRouter>
   </Provider>,
