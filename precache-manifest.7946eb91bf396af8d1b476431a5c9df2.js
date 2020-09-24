@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f185e32397a4903ce57e87c1b98845a9",
+    "revision": "e83612a4cb63b70746c5940055866910",
     "url": "/nibbl/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nibbl/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "d433f60105e20dc2ce65",
+    "revision": "796c4a4c4ae2ba662625",
     "url": "/nibbl/static/css/main.0fde18a8.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nibbl/static/js/2.30190217.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d433f60105e20dc2ce65",
-    "url": "/nibbl/static/js/main.c0571dc8.chunk.js"
+    "revision": "796c4a4c4ae2ba662625",
+    "url": "/nibbl/static/js/main.5e0108eb.chunk.js"
   },
   {
     "revision": "7bb6a9cd7d2bea2f1dd1",
