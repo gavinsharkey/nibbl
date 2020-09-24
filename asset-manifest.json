@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/nibbl/static/css/main.0fde18a8.chunk.css",
-    "main.js": "/nibbl/static/js/main.5e0108eb.chunk.js",
-    "main.js.map": "/nibbl/static/js/main.5e0108eb.chunk.js.map",
+    "main.js": "/nibbl/static/js/main.1fe93014.chunk.js",
+    "main.js.map": "/nibbl/static/js/main.1fe93014.chunk.js.map",
     "runtime-main.js": "/nibbl/static/js/runtime-main.09239f9f.js",
     "runtime-main.js.map": "/nibbl/static/js/runtime-main.09239f9f.js.map",
     "static/css/2.af3c1da9.chunk.css": "/nibbl/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.30190217.chunk.js": "/nibbl/static/js/2.30190217.chunk.js",
-    "static/js/2.30190217.chunk.js.map": "/nibbl/static/js/2.30190217.chunk.js.map",
+    "static/js/2.2b419bd7.chunk.js": "/nibbl/static/js/2.2b419bd7.chunk.js",
+    "static/js/2.2b419bd7.chunk.js.map": "/nibbl/static/js/2.2b419bd7.chunk.js.map",
     "index.html": "/nibbl/index.html",
-    "precache-manifest.7946eb91bf396af8d1b476431a5c9df2.js": "/nibbl/precache-manifest.7946eb91bf396af8d1b476431a5c9df2.js",
+    "precache-manifest.313a1964f306f4f07c6f344f031e0680.js": "/nibbl/precache-manifest.313a1964f306f4f07c6f344f031e0680.js",
     "service-worker.js": "/nibbl/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/nibbl/static/css/2.af3c1da9.chunk.css.map",
     "static/css/main.0fde18a8.chunk.css.map": "/nibbl/static/css/main.0fde18a8.chunk.css.map",
-    "static/js/2.30190217.chunk.js.LICENSE.txt": "/nibbl/static/js/2.30190217.chunk.js.LICENSE.txt"
+    "static/js/2.2b419bd7.chunk.js.LICENSE.txt": "/nibbl/static/js/2.2b419bd7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.09239f9f.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.30190217.chunk.js",
+    "static/js/2.2b419bd7.chunk.js",
     "static/css/main.0fde18a8.chunk.css",
-    "static/js/main.5e0108eb.chunk.js"
+    "static/js/main.1fe93014.chunk.js"
   ]
 }
